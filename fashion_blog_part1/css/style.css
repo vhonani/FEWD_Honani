@@ -1,0 +1,37 @@
+body{
+  font-family:'Lato', sans-serif;
+}
+a:link{
+  text-decoration:none;
+}
+
+#mainTitle{
+  margin:55px 0 15px 15px;
+}
+#mainTitle a{
+  color:#990000;
+  font-size: 62px;
+  font-weight:300;
+}
+
+#subTitle{
+  font-weight: bolder 300;
+  font-size:32px;
+  margin:15px 0 15px 15px;
+}
+#navigation{
+  margin:15px;
+}
+#navigation a{
+  color:#e0e0e0;
+  font-weight: 300;
+  font-size: 25px;
+  text-decoration: underline;
+  padding: 0 15px 0 15px;
+  padding-bottom:3px;
+}
+
+.gray-text{
+  color:#e0e0e0;
+  font-size:28px;
+}
