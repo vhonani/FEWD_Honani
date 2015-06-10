@@ -1,0 +1,79 @@
+/*header stuff*/
+#title-container{
+  background-color:gray;
+  position:relative;
+  height:auto;
+  width:auto;
+
+}
+ #title-container h1{
+   position:relative;
+   float:left;
+   text-align:left;
+   margin-top:83px;
+   margin-left:73px;
+   margin-bottom:18px;
+
+ }
+ #title-container h2{
+   position:relative;
+   float:left;
+   text-align:right;
+   margin:110px 0 0 40px;
+ }
+
+ /*navigation stuff*/
+#navigation{
+  position:relative;
+  clear:both;
+  background-color:#0080ff;
+  opacity: .6;
+  margin:164px 0 0 72px;
+  width:auto;
+  height:80px;
+}
+
+#navigation a:link, a:visited{
+  color:#e0e0e0;
+  font-weight: 400;
+  font-size:1.7em;
+  display:block;
+  text-decoration:none;
+  width:216px;
+  height:50px;
+}
+#navigation li{
+  float:left;
+  background-color:blue;
+  horizontal-align:middle;
+  border-left:1px solid white;
+  text-align:center;
+  padding-top:25px;
+}
+
+/*blog post stuff*/
+.post-container{
+  width:868px;
+  height:810px;
+  border-bottom:1px solid black;
+  margin-left:72px;
+}
+
+.post-container h2{
+  margin-top:20px;
+  font-weight:400;
+  font-size:42px;
+}
+.post-container h3{
+  font-weight:400;
+  font-size:2.7em;
+}
+.post-container h4{
+  float:right;
+}
+
+.post-container img{
+  width:100%;
+  margin-top:25px;
+  opacity:.6;
+}

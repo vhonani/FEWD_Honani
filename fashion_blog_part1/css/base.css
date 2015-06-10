@@ -1,0 +1,64 @@
+/*font used
+http://fonts.googleapis.com/css?family=Lato:100, 300,400,700,900,400italic,700italic,900italic */
+a:link{
+  text-decoration:none;
+}
+
+body{
+  font-family:'Lato', sans-serif;
+}
+.preview{
+  background-image:url('../img/fashion_blog_part2.png');
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100%;
+  height:auto;
+}
+
+
+h1{
+  font-family:'Lato', sans-serif;
+  font-weight:400;
+  font-size:3.9em;
+
+}
+h2{
+  font-weight:400;
+  font-size:32px;
+
+}
+article{
+  position:relative;
+  float:left;
+  width:66%;
+  background:gray;
+  opacity:.6;
+  margin-top:75px;
+  height:815px;
+}
+aside{
+  position:relative;
+  float:right;
+  width:34%;
+  background:blue;
+  opacity:.6;
+  margin-top:75px;
+}
+
+p{
+  font-family:'Lato', sans-serif;
+  margin-top:30px;
+  margin-left:1px;
+  text-align:left;
+  font-size:21px;
+  font-weight:400;
+  line-height: 1.6em;
+}
+
+p::first-letter{
+  font-size:5.9em;
+  color:black;
+  float:left;
+  line-height: 1em;
+  margin:0 0.05em 0 0;
+}
