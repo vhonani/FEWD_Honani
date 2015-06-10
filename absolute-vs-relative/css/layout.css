@@ -1,0 +1,55 @@
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+header {
+  position: relative;
+  padding: 40px;
+  background: #00FF00;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+
+section {
+  float:right;
+  position: relative;
+  padding: 40px;
+  background: #63DCEF;
+  border-bottom: 1px solid #DCDCDC;
+  width:80%;
+}
+
+section h4{
+  position:absolute;
+  top: 2.0em;
+  right: 40px;
+}
+
+.section-content{
+  float:left;
+  width:70%;
+}
+.section-aside{
+  float:right;
+  width:30%;
+  margin-top:80px;
+  padding-left:5px;
+
+}
+
+aside {
+  position: relative;
+  float:left;
+  width:20%;
+  padding: 40px;
+  background: #EF63DC;
+  padding-bottom: 1.0em;
+}
+
+footer {
+  position: relative;
+  padding: 40px;
+  background: #EF63DC;
+  clear:both;
+}

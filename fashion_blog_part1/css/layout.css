@@ -26,8 +26,6 @@
 #navigation{
   position:relative;
   clear:both;
-  background-color:#0080ff;
-  opacity: .6;
   margin:164px 0 0 72px;
   width:auto;
   height:80px;
@@ -44,13 +42,40 @@
 }
 #navigation li{
   float:left;
-  background-color:blue;
+  background-color:#191919;
   horizontal-align:middle;
   border-left:1px solid white;
   text-align:center;
   padding-top:25px;
 }
 
+/*nav bar at footer stuff */
+#nav-footer{
+  position:relative;
+
+  opacity: .6;
+  padding-top:40px;
+  padding-left:73px;
+  height:70px;
+}
+
+#nav-footer a:link, a:visited{
+  color:#ff4c4c;
+  font-weight: 400;
+  font-size:1.5em;
+  display:inline;
+  text-decoration:none;
+
+}
+#nav-footer li{
+  float:left;
+  border-right:1px solid gray;
+  text-align:left;
+  margin-top:25px;
+  padding-right:3px;
+  padding-left:3px;
+
+}
 /*blog post stuff*/
 .post-container{
   width:868px;
@@ -70,6 +95,9 @@
 }
 .post-container h4{
   float:right;
+  font-size:21px;
+  font-weight:600;
+  margin:35px 3px 0 0;
 }
 
 .post-container img{

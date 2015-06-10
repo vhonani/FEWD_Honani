@@ -1,0 +1,55 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firefox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #434343;
+     font-size: 16px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     background:#DCDCDC;
+}
+
+h1{
+  font-size: 2.0em;
+}
+
+h2{
+  font-size: 1.6em;
+}
+
+h3{
+  font-size: 1.5em;
+  padding-bottom: 2.0em;
+}
+
+h4{
+  font-size: 1.3em;
+}
+
+h5{
+  font-size: 1em;
+  font-weight:bold;
+}
+
+h6{
+  font-size: .6em;
+}
+
+p{
+  line-height: 1.3em;
+  padding-bottom: 20px;
+  text-align:justify;
+}
