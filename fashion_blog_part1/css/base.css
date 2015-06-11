@@ -12,19 +12,21 @@ h1{
   font-family:'Lato', sans-serif;
   font-weight:400;
   font-size:3.9em;
-
 }
 h2{
   font-weight:400;
   font-size:32px;
 
 }
+h3{
+  font-weigh:400;
+  font-size:26px;
+  color: 
+}
 article{
   position:relative;
   float:left;
   width:66%;
-  background:gray;
-  opacity:.6;
   margin-top:75px;
   height:815px;
 }
@@ -32,8 +34,6 @@ aside{
   position:relative;
   float:right;
   width:34%;
-  background:blue;
-  opacity:.6;
   margin-top:75px;
 }
 

@@ -1,6 +1,5 @@
 /*header stuff*/
 #title-container{
-  background-color:gray;
   position:relative;
   height:auto;
   width:auto;
@@ -15,9 +14,14 @@
    margin-bottom:18px;
 
  }
+ #title-container h1 a{
+   color:#e50000;
+
+ }
  #title-container h2{
    position:relative;
    float:left;
+   color:#b2b2b2;
    text-align:right;
    margin:110px 0 0 40px;
  }
@@ -52,15 +56,13 @@
 /*nav bar at footer stuff */
 #nav-footer{
   position:relative;
-
-  opacity: .6;
   padding-top:40px;
   padding-left:73px;
   height:70px;
 }
 
 #nav-footer a:link, a:visited{
-  color:#ff4c4c;
+  color:#e50000;
   font-weight: 400;
   font-size:1.5em;
   display:inline;
@@ -72,10 +74,13 @@
   border-right:1px solid gray;
   text-align:left;
   margin-top:25px;
-  padding-right:3px;
-  padding-left:3px;
-
+  padding:0 4px 0 4px;
 }
+
+#nav-footer li:last-child{
+  border-right:0px;
+}
+
 /*blog post stuff*/
 .post-container{
   width:868px;
@@ -88,14 +93,20 @@
   margin-top:20px;
   font-weight:400;
   font-size:42px;
+  color:#191919;
+}
+
+.post-container h2 a:link, a:visited{
+  color:#191919;
 }
 .post-container h3{
   font-weight:400;
   font-size:2.7em;
+  color:#b2b2b2;
 }
 .post-container h4{
   float:right;
-  font-size:21px;
+  font-size:1.2em;
   font-weight:600;
   margin:35px 3px 0 0;
 }
@@ -103,5 +114,6 @@
 .post-container img{
   width:100%;
   margin-top:25px;
-  opacity:.6;
 }
+
+/*aside stuff */
