@@ -1,0 +1,22 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+
+
+@import 'base/base.css';
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+@import 'comp/slider.css';
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
