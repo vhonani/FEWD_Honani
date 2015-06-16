@@ -155,9 +155,9 @@
   font-size:3.0em;
 }
 .ad h1{
-
   padding-top:45px;
 }
+/*external links*/
 #links{
   margin-left:25px;
   margin-bottom:25px;
@@ -169,4 +169,15 @@
   font-size:1.2em;
   font-weight:600;
   color:#7b7b7b;
+  margin-bottom:15px;
+}
+#links li{
+  list-style-type:circle;
+  line-height: 1.6em;
+  color:#e50000;
+  font-weight:400;
+  font-size:18px;
+}
+#links ul{
+  margin-left:25px;
 }
