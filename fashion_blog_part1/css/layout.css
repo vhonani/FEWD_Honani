@@ -35,8 +35,8 @@
   height:80px;
 }
 
-#navigation a:link, a:visited{
-  color:#e0e0e0;
+#navigation li a{
+  color:#f7f7f7;
   font-weight: 400;
   font-size:1.7em;
   display:block;
@@ -55,6 +55,7 @@
 
 /*nav bar at footer stuff */
 #nav-footer{
+
   position:relative;
   padding-top:40px;
   padding-left:73px;
@@ -65,7 +66,7 @@
   color:#e50000;
   font-weight: 400;
   font-size:1.5em;
-  display:inline;
+  display:inline-block;
   text-decoration:none;
 
 }
@@ -85,7 +86,7 @@
 .post-container{
   width:868px;
   height:810px;
-  border-bottom:1px solid black;
+  border-bottom:1px solid #7b7b7b;
   margin-left:72px;
 }
 
@@ -93,10 +94,10 @@
   margin-top:20px;
   font-weight:400;
   font-size:42px;
-  color:#191919;
+
 }
 
-.post-container h2 a:link, a:visited{
+.post-container h2 a{
   color:#191919;
 }
 .post-container h3{
@@ -117,3 +118,55 @@
 }
 
 /*aside stuff */
+/*about container*/
+#about{
+  margin-bottom:25px;
+  width:400px;
+  height:390px;
+  border-bottom:1px solid #7b7b7b;
+}
+#about h3{
+  font-size:1.2em;
+  font-weight:600;
+  color:#7b7b7b;
+}
+#about h4{
+  float:right;
+  color:#e50000;
+  font-size:1.2em;
+  font-weight:600;
+}
+
+/*adblock conatiner*/
+.adblock{
+  margin:25px;
+  width:400px;
+  height:390px;
+  border-bottom:1px solid #7b7b7b;
+}
+.ad{
+  width:400px;
+  height:325px;
+  background-color:#b2b2b2;
+  color:#7b7b7b;
+  text-align:center;
+  font-family:'Lato', sans-serif;
+  font-weight:500;
+  font-size:3.0em;
+}
+.ad h1{
+
+  padding-top:45px;
+}
+#links{
+  margin-left:25px;
+  margin-bottom:25px;
+  width:400px;
+  height:390px;
+  border-bottom:1px solid #7b7b7b;
+}
+#links h3{
+  font-size:1.2em;
+  font-weight:600;
+  color:#7b7b7b;
+}

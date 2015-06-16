@@ -19,10 +19,10 @@ h2{
 
 }
 h3{
-  font-weigh:400;
+  font-weight:400;
   font-size:26px;
-  color: 
 }
+
 article{
   position:relative;
   float:left;
@@ -34,15 +34,24 @@ aside{
   position:relative;
   float:right;
   width:34%;
-  margin-top:75px;
+  margin-top:170px;
 }
 
+aside p{
+  text-align:left;
+  font-size: 18px;
+  font-weight:400;
+  line-height:1.5em;
+  margin:15px 15px 20px 0;
+  padding-left:5px;
+}
 footer{
   clear:both;
   width:100%;
 
 }
-p{
+
+article p{
   font-family:'Lato', sans-serif;
   text-align:left;
   font-size:21px;
@@ -53,7 +62,7 @@ p{
   padding-right:3px;
 }
 
-p::first-letter{
+ article p::first-letter{
   font-size:5.9em;
   color:black;
   float:left;
