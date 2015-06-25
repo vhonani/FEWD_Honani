@@ -1,0 +1,22 @@
+/*
+Project Name: WebApp
+Client: ClientName
+Author: Vaniesha
+Developer @GA in LA
+*/
+
+
+
+
+@import 'base/base.css';
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+@import 'comp/slider.css';
+@import 'comp/hamburger_menu.css';
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,107 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+body {
+	width: 100%;
+  height:100%;
+	margin: 0;
+  padding: 0;
+  background-color:#0000FF;
+  color:#EFEFEF;
+}
+
+.therm{
+  width:800px;
+  height:400px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-400px;
+  margin-top:-200px;
+
+}
+
+.therm .current{
+  float:left;
+  width:400px;
+  height:400px;
+  text-align:center;
+}
+
+.therm h1 {
+  font-size: 32px;
+  text-transform:uppercase;
+}
+
+.therm .temp{
+  font-size:240px;
+  position:relative;
+  top:-40px;
+}
+
+.therm .temp span{
+  font-size: 120px;
+  position:relative;
+  top:-90px;
+}
+
+.therm .controls{
+  float:right;
+  width:400px;
+  height:400px;
+}
+
+.therm .control{
+  width:400px;
+  height:200px;
+}
+
+.therm .button{
+  width:80px;
+  height:80px;
+  margin:auto;
+  cursor:pointer;
+}
+
+.therm .button img{
+  width:100%;
+  height:100%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,71 @@
+.single-photo{
+  position:absolute;
+  width:100%;
+  height:100%;
+  opacity:0;
+  z-index:0;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.single-photo .close{
+  position:fixed;
+  top:10px;
+  right:10px;
+  width:40px;
+  height:40px;
+  background: url('../../img/close.svg');
+}
+.single-photo .meta, .single-photo .stats{
+  width:50%;
+  height:360px;
+  position:absolute;
+}
+.single-photo .meta{
+  margin-left:20%;
+  margin-right:20%;
+  bottom:-33%;
+}
+.single-photo .meta h2,.single-photo .meta h3,.single-photo .meta p{
+  font-size:64px;
+  color:rgba(255,255,255,0.8);
+  font-weight:100;
+  opacity:0.8;
+  text-align:left;
+  text-shadow:rgba(122,122,122,0.8);
+  letter-spacing:0.025em;
+  float:left;
+  clear:left;
+}
+.single-photo .meta h3{
+  font-size:36px;
+  letter-spacing:0.035em;
+}
+.single-photo .meta p{
+  font-size:18px;
+  letter-spacing:0.035em;
+  padding-top:10px;
+  float:left;
+  clear:none;
+  width:120%;
+  padding-bottom:80px;
+}
+.single-photo .stats {
+  width:100%;
+  padding-top:60px;
+  float:right;
+  clear:both;
+  display:none;
+}
+.single-photo .stats div{
+  width:25%;
+  font-size:72px;
+  color:rgba(255,255,255,0.8);
+  font-weight:100;
+  opacity:0.8;
+  width: 100%;
+  text-align:left;
+  text-shadow:rgba(122,122,122,0.8);
+  letter-spacing:0.025em;
+}

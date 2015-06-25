@@ -1,0 +1,87 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #121212;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+body {
+	width: 100%;
+  height:100%;
+	margin: 0;
+  padding: 0;
+  font-size: 32px;
+  text-align: center;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+#inputs {
+  margin-bottom: 30px;
+}
+input {
+  width: 50px;
+  padding: 10px;
+  font-size:16px;
+  position:relative;
+  top:-6px;
+}
+h1{
+  margin-top:20%;
+  font-weight:100;
+  padding-bottom:10px;
+}
+button {
+  background: #CCC;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.7), 0 1px 2px rgba(0,0,0,.25);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size:18px;
+  font-weight:300;
+  color:#232323;
+}
+button:hover {
+  background: #DDD;
+}
+button:active {
+  background: #BBB;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.25);
+}
+#comparison {
+  display: inline-block;
+  width: 40px;
+  font-size: 32px;
+  font-weight:100;
+}

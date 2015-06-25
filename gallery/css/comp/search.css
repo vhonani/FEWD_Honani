@@ -1,0 +1,25 @@
+#search{
+  width:66%;
+  height:32px;
+  position:absolute;
+  left:50%;
+  margin-left:-33%;
+  margin-top:14px;
+  z-index:100;
+  opacity:0.5;
+}
+
+#search input{
+  border: 1px solid rgba(255,255,255,0.4);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 4px;
+  outline: 0;
+  -webkit-appearance: none;
+  background: rgba(255,255,255,0.3);
+  height:36px;
+  width:100%;
+  color:#FFF;
+}

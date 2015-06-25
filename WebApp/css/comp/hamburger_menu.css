@@ -1,0 +1,22 @@
+
+.menu{
+  float:left;
+  height:100%;
+  width:10%;
+  background-color:#3f3f3f;
+  position:absolute;
+  left:0;
+  z-index:0;
+}
+
+.hamburger{
+  position:absolute;
+  top:10px;
+  left:10px;
+  width:44px;
+  height:44px;
+  z-index:20;
+  background: url('../../img/hamburger.svg');
+  background-size: 32px 32px;
+  background-position: 4px 4px;
+}
