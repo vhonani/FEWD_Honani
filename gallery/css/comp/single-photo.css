@@ -2,11 +2,12 @@
   position:absolute;
   width:100%;
   height:100%;
-  opacity:0;
+  opacity:1;
   z-index:0;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color:#424242
 
 }
 .single-photo .close{
@@ -27,7 +28,7 @@
   margin-right:20%;
   bottom:-33%;
 }
-.single-photo .meta h2,.single-photo .meta h3,.single-photo .meta p{
+.single-photo .meta h5,.single-photo .meta h6,.single-photo .meta p{
   font-size:64px;
   color:rgba(255,255,255,0.8);
   font-weight:100;
@@ -38,7 +39,7 @@
   float:left;
   clear:left;
 }
-.single-photo .meta h3{
+.single-photo .meta h5{
   font-size:36px;
   letter-spacing:0.035em;
 }
