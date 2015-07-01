@@ -18,7 +18,7 @@ Element.prototype.Gallery = function(){
 
     section.innerHTML = ev.target.innerHTML;
     section.style.backgroundImage = ev.target.style.backgroundImage;
-    section.style.fontFamily = 'Indie Flower, cursive';
+    section.style.fontFamily = 'Indie Flower,cursive';
     //section.style.backgroundRepeat ='no-repeat';
     //section.style.backgroundSize = '400 x 400';
     //section.style.backgroundPosition = 'center center';

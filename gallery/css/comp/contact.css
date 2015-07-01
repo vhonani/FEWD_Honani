@@ -50,7 +50,8 @@
 }
 
 #contact input{
-
+  clear:both;
+  float:left;
   width:33%;
   margin-bottom:40px;
 }
@@ -58,7 +59,7 @@
 #contact textarea{
 
   width:100%;
-  height:360px;
+  height:auto;
 
 }
 

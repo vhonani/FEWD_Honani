@@ -1,4 +1,4 @@
-#search{
+#search_bar{
   width:66%;
   height:32px;
   position:absolute;
@@ -9,7 +9,7 @@
   opacity:0.5;
 }
 
-#search input{
+#search_bar input{
   border: 1px solid rgba(255,255,255,0.4);
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;

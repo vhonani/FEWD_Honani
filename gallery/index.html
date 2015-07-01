@@ -15,17 +15,25 @@
 		<script src="js/slider.js"></script>
 		<script src="js/nav.js"></script>
 		<script src="js/gallery.js"></script>
+		<script src="js/contact.js"></script>
+		<script src="js/search.js"></script>
 	</head>
 	<body>
 
 			<nav id="nav">
 				<ul>
-					<li class="nav-item">Home</li>
-					<li class="nav-item">Gallery</li>
-				</ul>
-			</nav>
+					<li class="nav-item" data-section="slider">Home</li>
+					<li class="nav-item" data-section="gallery">Gallery</li>
+					<li class="nav-item" data-section="contact">Contact</li>
+				</ul></nav>
 
 			<div id="container">
+
+				<div id="search_bar">
+					<input placeholder="search" name="search" id="search" type="search"/>
+				</div>
+
+
 				<section id="slider" class="slider" data-index="0">
 						<ul>
 							<li><img src="img/photos/california.jpg"></li>
@@ -37,6 +45,22 @@
 				<section id="gallery" class="gallery" data-index="1">
 					<ul>
 					</ul>
+				</section>
+				<section id="contact" class="contact">
+					<div class ="bg">
+						<div class="wrapper" id="form-wrapper">
+							<h1>Contact Us</h1>
+							<form id="c_form" name="c_form">
+								<!--input type = search-->
+								<input type="text" name="name" id="name" placeholder="Please enter your name" tabindex="1">
+								<input type="email" name="email" id="email" placeholder="Your Email Address" tabindex="2">
+								<input type="tel" name="tel" id="tele" placeholder ="Please enter your telephone" tabindex="3">
+								<textarea name="description" placeholder ="Please enter your message" type="text" tabindext="4" rows="6"></textarea>
+							</form>
+							<button id="contact-submit"  tabindex="5">Send Email</button>
+						</div>
+					</div>
+
 				</section>
 
 			</div><!-- #container -->

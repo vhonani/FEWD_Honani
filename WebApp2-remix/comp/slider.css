@@ -1,0 +1,16 @@
+.slider{
+}
+
+.slider ul{
+  list-style-type: none;
+  width:auto;
+  position:relative;
+
+}
+
+.slider ul li{
+  display: inline-block;
+  width:100%;
+  float: left;
+
+}
