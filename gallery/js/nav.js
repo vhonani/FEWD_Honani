@@ -6,7 +6,6 @@ Element.prototype.Nav = function(){
       container = document.getElementById('container')
       section=document.getElementsByTagName('section');
 
-      console.log(navItems);
   this.toggleNav = function(){
     if(container.style.left === "0px"){
       container.style.left = "320px";
@@ -37,7 +36,6 @@ Element.prototype.Nav = function(){
   //show a section
  this.showSection = function(id){
    this.hideSection();
-   console.log(document.getElementById(id));
   document.getElementById(id).style.display = 'block';
   document.getElementById(id).style.opacity = '1.0';
   document.getElementById(id).style.zIndex = '50';

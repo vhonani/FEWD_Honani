@@ -12,7 +12,7 @@ Element.prototype.Gallery = function(){
     //user clicks 'x' - section closes and returns previous layout
 
     //section must appear on top of the other one
-    console.log(ev.target.style.backgroundImage);
+
     var section = document.createElement('section');
     section.classList.add('single-photo');
 
@@ -25,6 +25,7 @@ Element.prototype.Gallery = function(){
     //duh
     var p = document.createElement('p');
     p.innerHTML = ev.target.dataset.description;
+
 
 
 
@@ -42,7 +43,7 @@ Element.prototype.Gallery = function(){
 
   this.layoutPhotos = function(){
       // add logic for each photo in here
-
+      console.log(photos.image_url);
       photos.forEach(function(photo,index){
 
         var li = document.createElement('li');
@@ -69,6 +70,7 @@ Element.prototype.Gallery = function(){
           var response = JSON.parse(xhr.responseText);
           photos = response.photos;
           gallery.layoutPhotos();
+
 
 
 

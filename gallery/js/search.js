@@ -4,9 +4,9 @@ Element.prototype.Search = function(){
   //when user focus' on input , clear it's contents
   var search_bar = document.getElementById('search_bar');
   var gallery = document.getElementById('gallery');
+  //gallery.children[0].children;
 
-this.getFilter = function(){
-  console.log("this is the searchPhotos");
+this.getSearch = function(){
   var search_term = search_bar.children[0].value;
   console.log(search_term);
 
@@ -15,13 +15,17 @@ this.getFilter = function(){
 
   //after user presses enter/return, filter the gallery <li> using tags from the JSON model.
 
-  //gallery.getFiltered('li');
+  //create a function using gallery.filter() to parse through the JSON model
 
   //show hide based on the filter using data tags
   this.init = function(){
-    search_bar.addEventListener('keyup', function(){
-      search.getFilter();
+    search.addEventListener('keypress', function(e){
+      if(e.keyCode ===13){
+        search.getSearch();
+      }
     });
+
+
   };
 this.init();
 
