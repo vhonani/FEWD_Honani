@@ -1,0 +1,39 @@
+body {
+background:#228b22 ;
+    width:800px;
+    height:540px;
+    padding:24px;
+    margin:10px auto;
+ text-align: center;
+ color:#ffffff ;
+}
+
+img {
+ border-radius: 27px;
+ display: inline;
+ height: 234px;
+ width: 170px;
+ margin: 12px;
+}
+.card-style{
+  float:left;
+  background:url('../img/bicycle-back.jpg');
+  background-size:150px;
+  background-repeat: no-repeat;
+  height:250px;
+  width:250px;
+}
+
+.flip-container {
+  perspective:1000;
+}
+.flipper{
+  width:320px;
+  height:480px;
+}
+.front{
+
+}
+.back{
+
+}

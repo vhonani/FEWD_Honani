@@ -10,6 +10,10 @@ this.getSearch = function(){
   var search_term = search_bar.children[0].value;
   console.log(search_term);
 
+  //call JSON:phot0s:name 
+  //use for loop + IndexOf >=0
+
+
 };
 
 
