@@ -17,11 +17,13 @@ Element.prototype.CardTable = function(){
     //insert into HTML document
     for (x=0;x<cardImage.length; x++){
       var li = document.createElement('li');
+      //creates and styles li for cards layout
       li.classList.add('card');
       var img = new Image();
       //card.className = 'hearts';
       img.src=cardImage[x].src;
       //img.className ="front";
+      //implements array into li format
       li.appendChild(img);
       ul.appendChild(li);
       img.addEventListener('mousedown', cardtable.animate);
@@ -39,7 +41,7 @@ Element.prototype.CardTable = function(){
   //  ev.target.classList.add('back');
 
     ev.target.src = "./img/french-suits.svg";
-    
+
 
 
   };
