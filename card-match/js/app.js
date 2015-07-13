@@ -1,2 +1,2 @@
-var cardtableElement = document.getElementById('cardtable');
-cardtableElement.CardTable();
+var CardTableElement = document.getElementById('cardtable');
+CardTableElement.CardTable();

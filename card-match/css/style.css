@@ -15,25 +15,43 @@ img {
  width: 170px;
  margin: 12px;
 }
-.card-style{
-  float:left;
-  background:url('../img/bicycle-back.jpg');
-  background-size:150px;
-  background-repeat: no-repeat;
-  height:250px;
-  width:250px;
+
+#cardtable{
+  gradient background: background: rgba(0,94,0,1);
+ background: -moz-radial-gradient(center, ellipse cover, rgba(0,94,0,1) 4%, rgba(3,81,6,1) 49%, rgba(5,69,11,1) 92%, rgba(5,69,11,1) 100%);
+ background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(4%, rgba(0,94,0,1)), color-stop(49%, rgba(3,81,6,1)), color-stop(92%, rgba(5,69,11,1)), color-stop(100%, rgba(5,69,11,1)));
+ background: -webkit-radial-gradient(center, ellipse cover, rgba(0,94,0,1) 4%, rgba(3,81,6,1) 49%, rgba(5,69,11,1) 92%, rgba(5,69,11,1) 100%);
+ background: -o-radial-gradient(center, ellipse cover, rgba(0,94,0,1) 4%, rgba(3,81,6,1) 49%, rgba(5,69,11,1) 92%, rgba(5,69,11,1) 100%);
+ background: -ms-radial-gradient(center, ellipse cover, rgba(0,94,0,1) 4%, rgba(3,81,6,1) 49%, rgba(5,69,11,1) 92%, rgba(5,69,11,1) 100%);
+ background: radial-gradient(ellipse at center, rgba(0,94,0,1) 4%, rgba(3,81,6,1) 49%, rgba(5,69,11,1) 92%, rgba(5,69,11,1) 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005e00', endColorstr='#05450b', GradientType=1 );
+ background-size: 100% 1600px;
+ background-repeat: no-repeat;
 }
 
-.flip-container {
-  perspective:1000;
+.card{
+  height:325px;
+  width:235px;
+  display:inline;
+  list-style: none;
 }
-.flipper{
-  width:320px;
-  height:480px;
+.flip{
+  transform: rotateY(180deg);
+  transition: 0.6s;
+	transform-style: preserve-3d;
+  position:relative;
 }
+
+.front, .back {
+	backface-visibility: hidden;
+}
+
 .front{
-
+  z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
 }
-.back{
 
+.back{
+  transform: rotateY(180deg);
 }
