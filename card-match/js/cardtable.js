@@ -1,3 +1,7 @@
+Element.prototype.hasClass = function(className) {
+   return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
+};
+
 Element.prototype.CardTable = function(){
   var cardtable = this;
   var table = document.getElementById('cardtable');
@@ -10,10 +14,14 @@ Element.prototype.CardTable = function(){
     var cardImage = [];
     for(var i=0; i<8;i++){
       cardImage[i]={
-        src:"./img/bicycle-back.jpg"
+        src:"./img/bicycle-back.jpg",
+        suit:"diamond"
       };
     }
     console.log(cardImage);
+
+    //create suit variable to randomize and shuffle later
+    var suits = ['diamond','heart','spade','club'];
     //insert into HTML document
     for (x=0;x<cardImage.length; x++){
       var li = document.createElement('li');
@@ -26,23 +34,51 @@ Element.prototype.CardTable = function(){
       //implements array into li format
       li.appendChild(img);
       ul.appendChild(li);
+      // Set random var, depending value set suit
+     var suit = suits[Math.floor(Math.random()*suits.length)];
+     img.classList.add(suit); // set suits
+
+     //eventListeners
       img.addEventListener('mousedown', cardtable.animate);
+      img.addEventListener('mousedown', cardtable.checkMatch);
     };
 
   };
+  this.checkMatch = function(ev) {
+  var cardsFlipped = document.getElementsByClassName("flip");
+  // If two cards are flipped, check for match
+  if (cardsFlipped.length == 2) {
+    // console.log(cardsFlipped);//
+    // Check if cards match
+    if (cardsFlipped[0].hasClass('diamond') && cardsFlipped[1].hasClass('diamond')) {
+      console.log("the cards MATCH");
+    }
+    else {
+      console.log("the cards DO NOT MATCH");
+      // Reset cards and remove "flip" class
+    }
+  }
+  else {
+    return;
+  }
+};
+
+
 
   //animate card on click
   this.animate = function(ev){
 
     //sets the image for the card being clicked on to the suits image
+ev.target.classList.add('flip');
+ev.target.style.backgroundColor = 'white';
+//  ev.target.classList.add('back');
 
-    ev.target.classList.add('flip');
-    ev.target.style.backgroundColor = 'white';
-  //  ev.target.classList.add('back');
-
-    ev.target.src = "./img/french-suits.svg";
-
-
+// Check element's class for suit, then assign image based on suit
+if (ev.target.hasClass("heart")) {
+  ev.target.src = "./img/bicycle-back.jpg";
+} else {
+  ev.target.src = "./img/french-suits.svg";
+}
 
   };
   //init
