@@ -1,0 +1,89 @@
+//Define your breakpoints
+
+$extralarge: new-breakpoint(min-width 1920px max-width 5000px 16);
+$large: new-breakpoint(min-width 1366px 16);
+$medium: new-breakpoint(min-width 1025px max-width 1366px 16);
+$small: new-breakpoint(min-width 769px max-width 1024px 12);
+$mobile: new-breakpoint(min-width 0px max-width 768px 12);
+$tablet: new-breakpoint(min-width 569px max-width 768px 12);
+$landscape: new-breakpoint(min-width 321px max-width 568px 4);
+$portrait: new-breakpoint(max-width 320px 4);
+
+
+//-----------------------------------------
+//  4K Screen 1921px+ 16col
+//-----------------------------------------
+@include media($extralarge) {
+  .card{
+    @include span-columns(4);
+  }
+  .card:nth-child(4n){
+    @include omega();
+  }
+}
+//-----------------------------------------
+//  Large Screen 1367-1920px 16col
+//-----------------------------------------
+@include media($large) {
+  .card{
+    @include span-columns(4);
+  }
+  .card:nth-child(4n){
+    @include omega();
+  }
+}
+//-----------------------------------------
+//  Medium Screen 1025-1366px 12col
+//-----------------------------------------
+@include media($medium) {
+  .card{
+    @include span-columns(4);
+  }
+  .card:nth-child(4n){
+    @include omega();
+  }
+}
+//-----------------------------------------
+//  Small Screen 769-1024px 12col
+//-----------------------------------------
+@include media($small) {
+  .card{
+    @include span-columns(4);
+  }
+  .card:nth-child(3n){
+    @include omega();
+  }
+}
+//-----------------------------------------
+//  Tablet Screen 569-768px 12col
+//-----------------------------------------
+@include media($tablet) {
+  .card{
+    @include span-columns(4);
+  }
+  .card:nth-child(2n){
+    @include omega();
+  }
+}
+//-----------------------------------------
+//  Phablet Screen 321-568px 4col
+//-----------------------------------------
+@include media($landscape) {
+  .card{
+    @include span-columns(4);
+  }
+  .card:nth-child(3n){
+    @include omega();
+  }
+}
+//-----------------------------------------
+//  Mobile Portrait Screen 320px 4col
+//-----------------------------------------
+@include media($portrait) {
+  .card{
+    @include span-columns(2);
+  }
+  .card:nth-child(1n){
+    @include omega();
+  }
+}

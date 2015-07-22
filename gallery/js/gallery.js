@@ -52,7 +52,7 @@ Element.prototype.Gallery = function(){
 
         li.style.backgroundSize='cover';
 
-        li.innerHTML = '<div class="meta"><h5>'+photo.name+'</h5><h6>'+photo.user.fullname+'</h6></div><div class="stats"><div>'+photo.rating+'</div></div></div>';
+        li.innerHTML = '<div class="meta"><h5>'+photo.camera+'</h5><h6>'+photo.user.fullname+'</h6></div><div class="stats"><div>'+photo.rating+'</div></div></div>';
 
         li.dataset.description = photo.description;
         li.addEventListener('mousedown', gallery.singlePhoto);

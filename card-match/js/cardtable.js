@@ -12,7 +12,7 @@ Element.prototype.CardTable = function(){
   this.createGrid = function(){
     //create Array of images
     var cardImage = [];
-    for(var i=0; i<8;i++){
+    for(var i=0; i<12;i++){
       cardImage[i]={
         src:"./img/bicycle-back.jpg",
         suit:"diamond"
@@ -69,7 +69,7 @@ Element.prototype.CardTable = function(){
   this.animate = function(ev){
 
     //sets the image for the card being clicked on to the suits image
-ev.target.classList.add('flip');
+ev.target.classList.toggle('flip');
 ev.target.style.backgroundColor = 'white';
 //  ev.target.classList.add('back');
 

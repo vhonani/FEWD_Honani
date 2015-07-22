@@ -1,0 +1,26 @@
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firefox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #121212;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background: $blue;
+     @include background-image (radial-gradient(circle at 50% 50%, $blue, $green) );
+}

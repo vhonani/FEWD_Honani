@@ -1,0 +1,9 @@
+.container {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  .grid{
+    @include outer-container(100%);
+  }
+}

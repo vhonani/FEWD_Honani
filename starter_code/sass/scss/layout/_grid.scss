@@ -1,0 +1,10 @@
+@import 'neat-helpers'; // or "neat-helpers" when in Rails
+
+// Change the grid settings
+$visual_grid: true;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.2;
+$max-width: 98%;
+
+// Define your breakpoints

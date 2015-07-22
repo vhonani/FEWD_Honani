@@ -1,0 +1,7 @@
+@mixin card($bg-color){
+  display: block;
+  min-height: 320px;
+  border-radius: 8px;
+  margin: 1% 0;
+  background: $bg-color;
+}
